@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body {
+            background-color: rgb(244, 245, 228);
+        }
+
+        h3 {
+            color: firebrick;
+        }
+        fieldset{
+            margin: 20px;
+            padding-bottom: 20px;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        hr{
+            width:50%;
+            border: dotted;
+            border-top: none;
+            border-width: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <h1 >Personal Information</h1>
+    <hr>
+    <form action="">
+        <fieldset>
+            <legend>Pls enter your details </legend>
+
+            <h3>Title</h3>
+            <div class="radio-container">
+                <input name="red" type="radio">
+                MR.
+                <input name="green" type="radio">
+                MRS.
+                <input name="blue" type="radio">
+                MS.
+                <input name="black" type="radio">
+                DR.
+            </div>
+            <hr>
+            <br>
+
+            <h3>Please select your age:</h3>
+            <input type="radio" id="age1" name="age" value="under 19">
+            <label for="age1">Under 20</label><br>
+            <input type="radio" id="age2" name="age" value="20-29">
+            <label for="age2">20-29</label><br>
+            <input type="radio" id="age3" name="age" value="30-39">
+            <label for="age3">30-39</label><br>
+            <input type="radio" id="age4" name="age" value="40-49">
+            <label for="age3">40-49</label><br>
+            <input type="radio" id="age5" name="age" value="50-59">
+            <label for="age3">50-59</label><br>
+            <input type="radio" id="age6" name="age" value="Above 60">
+            <label for="age3">Above 60</label><br><br><br>
+            <hr>
+            <div class="radio-container">
+                <b>Gender</b> ::
+                <input name="red" type="radio">
+                Male
+                <input name="green" type="radio">
+                Feamle
+                <input name="blue" type="radio">
+                Others
+            </div>
+            <hr>
+            <h3>Status</h3>
+            <p><input type="radio">Empoloyed</p>
+            <p><input type="radio">Un-Empoloyed</p>
+            <p><input type="radio">Student</p>
+            <hr>
+            <h3> Pls enter your date of birth</h3>
+            <input type="date"><br><br>
+
+
+
+            <input type="submit">
+            <input type="reset" name="" id="">
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

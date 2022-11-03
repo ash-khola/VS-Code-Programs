@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern matching</title>
+    <style>
+        body {
+            padding-top: 100px;
+            text-align: center;
+            font-size: x-large;
+            background-color: rgb(252, 185, 185);
+        }
+
+        p {
+            color: red;
+            font-weight: bold;
+        }
+
+        input {
+            width: 230px;
+            height: 20px;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+        }
+
+        legend {
+            text-align: left;
+            font-weight: bolder;
+        }
+    </style>
+
+</head>
+
+<body>
+    <fieldset>
+        <legend>E-mail validation Form</legend><br>
+        <form name="myform" action="mailto:ayushsingh12072000@gmail.com" onsubmit="return validateform()">
+
+            <!-- getting username -->
+            <h3>
+                Please enter a username of your choice:
+            </h3>
+            <input type="text" name="uname" id="">
+
+            <!-- getting password -->
+            <h3>Please enter Password</h3>
+            <input id="pass" type="text" name="" id="">
+            <p> Minimum 8 words</p>
+            <p> A upper case character</p>
+            <p> A lower case character</p>
+            <p> A digit</p>
+            <p>Special Character</p>
+
+            <!-- getting email -->
+            <h3>Please enter an email of your choice: </h3>
+            <input type="email" name="" id="">
+            <br><br>
+
+            <button type="submit" value="Submit">Submit</button>
+
+            <script>
+
+                // check username
+                function validateform() {
+                    var name = document.myform.uname.value;
+
+                    if (name == null || name == "") {
+                        alert("Plz Enter Your Name");
+                        return false;
+                    } else {
+                        alert("You have successfully loged in.")
+                    }
+                }
+
+                // check Password
+                var a = 0, b = 0, c = 0, d = 0, e = 0;
+                var suc = document.getElementById("pass");
+                // console.log(suc);
+
+                suc.onkeyup = function () {
+                    if (suc.value.length >= 8) {
+                        document.getElementsByTagName("p")[0].style.color = "green";
+                        a = 1;
+                    }
+                    else {
+                        document.getElementsByTagName("p")[0].style.color = "red";
+                    }
+
+                    if (suc.value.match(/[A-Z]/)) {
+                        document.getElementsByTagName("p")[1].style.color = "green";
+                        b = 1;
+                    }
+                    else {
+                        document.getElementsByTagName("p")[1].style.color = "red";
+                    }
+
+                    if (suc.value.match(/[a-z]/)) {
+                        document.getElementsByTagName("p")[2].style.color = "green";
+                        c = 1;
+                    }
+                    else {
+                        document.getElementsByTagName("p")[2].style.color = "red";
+                    }
+
+                    if (suc.value.match(/[0-9]/)) {
+                        document.getElementsByTagName("p")[3].style.color = "green";
+                        d = 1;
+                    }
+                    else {
+                        document.getElementsByTagName("p")[3].style.color = "red";
+                    }
+
+                    if (suc.value.match(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)) {
+                        document.getElementsByTagName("p")[4].style.color = "green";
+                        e = 1;
+                    }
+                    else {
+                        document.getElementsByTagName("p")[4].style.color = "red";
+                    }
+
+                    if (a == 1 && b == 1 && c == 1 && d == 1 && e == 1) {
+                        document.getElementsByTagName("body")[0].style.backgroundColor = 'rgb(129, 255, 133)';
+                        // alert('You have entered a valid Password.');
+                    }
+                    else {
+                        document.getElementsByTagName("body")[0].style.backgroundColor = 'white';
+                    }
+                }
+            </script>
+        </form>
+    </fieldset>
+</body>
+
+</html>

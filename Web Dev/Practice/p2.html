@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: lightcyan;
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: rgb(42, 165, 159);
+            margin-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        fieldset {
+            margin-right: 20px;
+            /* margin-bottom: 20px; */
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Blue Valley Computers
+    </h2>
+    <fieldset>
+        <legend>Job Application Form</legend><br>
+        <fieldset>
+            <legend>Personal Information</legend><br>
+
+            <form action="mailto: ashishky.jp11@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <div>
+                    <input type="text" name="myName" id="name">
+                </div>
+                <br>
+                <label for="name">Nationality:</label>
+                <div>
+                    <input type="text" name="myName" id="name">
+                </div>
+                <br>
+                <label for="role">Role:</label>
+                <div>
+                    <input type="text" name="myRoll" id="role">
+                </div>
+                <br>
+                <div>
+                    Gender: Male <input type="radio" name="myGender" id="">
+                    Female <input type="radio" name="myGender" id="">
+                    Others <input type="radio" name="myGender" id="">
+                </div>
+                <br>
+                <div>
+                    Age: <input type="number" name="myAge">
+                </div>
+                <br>
+                <div>
+                    Date of birth: <input type="date" name="myDate">
+                </div>
+                <br>
+                <div>
+                    Email: <input type="email" name="myEmail">
+                </div>
+                <br>
+                <div>
+                    <label for="car">Position applied for:</label>
+                    <select name="mycar" id="car" autofocus onclick="">
+                        <option value="hn" selected>Select</option>
+                        <option value="brz">Front End Developer</option>
+                        <option value="msz">Backend Developer</option>
+                        <option value="bm">Cloud Engineer</option>
+                        <option value="rng">Analyst</option>
+                        <option value="scp">IOS Developer</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="Qual.">Educational Qualification:</label>
+                    <select>
+                        <option value="Course">Course</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BBA">BBA</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="M.Tech">M.Tech</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="Work exp">Work Experience:</label>
+                    <select>
+                        <option value="hn" selected>Select</option>
+                        <option value="a">Fresher</option>
+                        <option value="b">2-5 yrs</option>
+                        <option value="c">5-10 yrs</option>
+                        <option value="d">10+ yrs</option>
+                    </select>
+                </div>
+
+                <br>
+                <!-- <label for="status">Are you hardworking? </label> -->
+                <!-- <div>
+            <input type="checkbox" name="myStatus" checked id="status">
+        </div> -->
+
+                <!-- <br>
+        <div>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I don't a vehicle.</label><br><br>
+        </div> -->
+                <!-- <br> -->
+                <!-- <div>
+            <label for="car">Model of Car do you prefer</label>
+            <select name="mycar" id="car">
+                <option value="bm">BMW</option>
+                <option value="hn" selected>Honda</option>
+                <option value="msz">Mersedies</option>
+                <option value="rng">Rangerover</option>
+                <option value="scp">Scorpio</option>
+                <option value="brz">Breeza</option>
+                <option value="ftnr">Fortuner</option>
+                <option value="tv">TUV 700</option>
+                <option value="bl">Bolero</option>
+                <option value="bl">Baleno</option>
+            </select>
+        </div> -->
+                <!-- <br>
+        Position applied for:
+        <button type="dropbox" autofocus onclick="alert('Hello world!')">Select Position</button>
+        <br> -->
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Refrences</legend>
+            <p>1. Name : <input type="text"></p>
+            <p> Occupation : <input type="text"></p>
+            <p> Realtionship : <input type="text"></p>
+            <p> Address : <input type="text"></p>
+            <p> Contact No. : <input type="digits"></p>
+            <hr>
+            <p>2. Name : <input type="text"></p>
+            <p> Occupation : <input type="text"></p>
+            <p> Realtionship : <input type="text"></p>
+            <p> Address : <input type="text"></p>
+            <p> Contact No. : <input type="digits"></p>
+        </fieldset>
+        <br>
+
+        <!-- <div>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+        </div> -->
+        <!-- <div>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+        </div> -->
+        <div>
+            <label for="myfile">Upload your resume:</label>
+            <input type="file" id="myfile" name="myfile">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br> <textarea name="myText" id="" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        Password:
+        <input type="Password" id="pass" name="pass"> <br>
+        <br>
+        Re-type password:
+        <input type="Password" id="repass" name="repass"> <br> <br>
+        <div>
+            Submit: <input type="submit" value="Submit now">
+            <input type="reset" value="Reset now">
+        </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="">
+    
+   <fieldset> <legend>PERSONAL DETAILS</legend>
+    <p>
+      
+       
+        Name: <input type="text" name="name" id="" required></p>
+    
+       <p> <fieldset>
+           <legend>GENDER</legend>
+           Male <input type="radio" name="gender" id="">
+        <br>
+        Female <input type="radio" name="gender" id="">
+        <br>
+        Others <input type="radio" name="gender" id="">
+       </fieldset>
+       </p>
+    
+       <p>address: <textarea name="address" id="address" cols="30" rows="5"></textarea required> </p>
+
+        <p>Birth date : <input type="date"></p>
+    
+       <p>mail id: <input type="email" name="mail" id="mail"></p>
+    <p>pincode: <input type="number" name="pincode" id="pincode" required></p>
+
+    <h3>Hobbies</h3>
+    <input type="checkbox" id="hobbies" name="Hobbies " value="Hobbies">
+<label for="Singing"> I love singing</label><br>
+<input type="checkbox" id="Dancing" name="Dancing" value="Dancing">
+<label for="dancing"> I love dancing</label><br>
+<input type="checkbox" id="Swimming" name="Swimming" value="Swimming">
+<label for="Swimming"> I love Swimming</label><br>
+
+<h3>Favourite Subjects </h3>
+<label for="sub">Choose a Subject:</label>
+<select name="stream" id="stream">
+  <optgroup label="Maths">
+    <option value="Maths">Calculus</option>
+    <option value="Geometry">Geometry</option>
+  </optgroup>
+  <optgroup label="Science">
+    <option value="Biology">Biology</option>
+    <option value="Physics">Physics</option>
+    <option value="Chemistry">Chemistry</option>
+  </optgroup>
+</select>
+
+<br>
+<br>
+
+<label for="browser">Choose your fav book from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Drama">
+    <option value="Fiction">
+    <option value="Poetry">
+    <option value="Horror">
+    
+  </datalist>
+
+<br>
+<br>
+<h3>Upload your image</h3>
+<label for="myfile">Select a file:</label>
+<input type="file" id="myfile" name="myfile">
+
+<h3>Enter your Adhar Card Number</h3>
+<input type="password">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="Reset" value="Reset">
+    <input type="Button" value="Button">
+</fieldset>
+    </form>
+
+
+    
+</body>
+</html> -->

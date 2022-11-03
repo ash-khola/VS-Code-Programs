@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: lightcyan;
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: rgb(42, 165, 159);
+            margin-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        fieldset {
+            margin-right: 20px;
+            /* margin-bottom: 20px; */
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        Sonipat Institute of Information Technology.
+    </h2>
+    <fieldset>
+        <legend>Registration Form</legend><br>
+        <fieldset>
+            <legend>Personal Information</legend><br>
+
+            <form action="mailto: ashishky.jp11@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <div>
+                    <input type="text" name="myName" id="name">
+                </div>
+                <br>
+                <label for="name">Father's name:</label>
+                <div>
+                    <input type="text" name="myName" id="name">
+                </div>
+                <br>
+                <label for="name">Mother's name:</label>
+                <div>
+                    <input type="text" name="myName" id="name">
+                </div>
+                <br>
+                <label for="name">Nationality:</label>
+                <div>
+                    <input type="text" name="myName" id="name">
+                </div>
+                <br>
+                <div>
+                    Gender: Male <input type="radio" name="myGender" id="">
+                    Female <input type="radio" name="myGender" id="">
+                    Others <input type="radio" name="myGender" id="">
+                </div>
+                <br>
+                <div>
+                    Age: <input type="number" name="myAge">
+                </div>
+                <br>
+                <div>
+                    Date of birth: <input type="date" name="myDate">
+                </div>
+                <br>
+                <div>
+                    Email: <input type="email" name="myEmail">
+                </div>
+                <br>
+                <div>
+                    <label for="Qual.">Course applying for:</label>
+                    <select>
+                        <option value="BCA">BCA</option>
+                        <option value="BBA">BBA</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="M.Tech">M.Tech</option>
+                    </select>
+                </div>
+                <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Academic Details</legend>
+            <h3>12th Details</h3>
+            <!-- <br> -->
+            <p>Board of Education : <input type="text"></p>
+            <p> Percentage scored : <input type="number"></p>
+            <p> Name of School : <input type="text"></p>
+            <p> Year of Passing : <input type="number"></p>
+            <label for="myfile">Upload your 12th marksheet:</label>
+            <input type="file" id="myfile" name="myfile">
+            <hr>
+            <h3>10th Details</h3>
+            <p>Board of Education : <input type="text"></p>
+            <p> Percentage scored : <input type="number"></p>
+            <p> Name of School : <input type="text"></p>
+            <p> Year of Passing : <input type="number"></p>
+            <label for="myfile">Upload your 10th marksheet:</label>
+            <input type="file" id="myfile" name="myfile">
+        </fieldset>
+        <br>
+        Password:
+        <input type="Password" id="pass" name="pass"> <br>
+        <br>
+        Re-type password:
+        <input type="Password" id="repass" name="repass"> <br> <br>
+        <div>
+            Submit: <input type="submit" value="Submit now">
+            <input type="reset" value="Reset now">
+        </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
+
+<!-- <Html>
+
+<head>
+    <title>
+        Registration Page
+    </title>
+</head>
+
+<body bgcolor="Lightskyblue">
+    <br>
+    <br>
+    <form>
+
+        <label> Firstname </label>
+        <input type="text" name="firstname" size="15" /> <br> <br>
+        <label> Middlename: </label>
+        <input type="text" name="middlename" size="15" /> <br> <br>
+        <label> Lastname: </label>
+        <input type="text" name="lastname" size="15" /> <br> <br>
+
+        <label>
+            Course :
+        </label>
+        <select>
+            <option value="Course">Course</option>
+            <option value="BCA">BCA</option>
+            <option value="BBA">BBA</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+            <option value="M.Tech">M.Tech</option>
+        </select>
+
+        <br>
+        <br>
+        <label>
+            Gender :
+        </label><br>
+        <input type="radio" name="male" /> Male <br>
+        <input type="radio" name="female" /> Female <br>
+        <input type="radio" name="other" /> Other
+        <br>
+        <br>
+
+        <label>
+            Phone :
+        </label>
+        <input type="text" name="country code" value="+91" size="2" />
+        <input type="text" name="phone" size="10" /> <br> <br>
+        Address
+        <br>
+        <textarea cols="80" rows="5" value="address">
+    </textarea>
+        <br> <br>
+        Email:
+        <input type="email" id="email" name="email" /> <br>
+        <br> <br>
+        Password:
+        <input type="Password" id="pass" name="pass"> <br>
+        <br> <br>
+        Re-type password:
+        <input type="Password" id="repass" name="repass"> <br> <br>
+        <input type="button" value="Submit" />
+    </form>
+</body>
+
+</html> -->

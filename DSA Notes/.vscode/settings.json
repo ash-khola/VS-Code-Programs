@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "variant": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
+    }
+}

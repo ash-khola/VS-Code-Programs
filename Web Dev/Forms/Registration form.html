@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question 1</title>
+    <style>
+        th {
+            background-color: #FFFFA5;
+            color: red;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #00B3FF;
+            padding: 10px;
+        }
+
+        .b_row {
+            text-align: center;
+        }
+
+        .buttons {
+            padding: 10px 30px 10px 30px;
+        }
+        table{
+            width: 40%;
+            height: 100px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <form action="" action="mailto:ayushsingh12072000@gmail.com" method="post">
+            <table border>
+                <tr>
+                    <th colspan="2"><strong>Registration Form</strong></th>
+                </tr>
+                <tr>
+                    <td><strong>Enter Name</strong></td>
+                    <td><input type="text" name="name" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td><strong>Enter Password</strong></td>
+                    <td><input type="password" name="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><strong>Enter Address</strong></td>
+                    <td><textarea name="address" placeholder="Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><strong>Select Game</strong></td>
+                    <td>
+                        <input type="checkbox" name="game" value="hockey">Hockey<br>
+                        <input type="checkbox" name="game" value="football">Football<br>
+                        <input type="checkbox" name="game" value="badminton">Badminton<br>
+                        <input type="checkbox" name="game" value="cricket">Cricket<br>
+                        <input type="checkbox" name="game" value="volleyball">Volleyball<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Gender</strong></td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Select ur age</strong></td>
+                    <td>
+                        <select name="age" autofocus>
+                            <option value="" disabled selected>Select</option>
+                            <option value="10-20">10-20</option>
+                            <option value="20-30">20-30</option>
+                            <option value="30-40">30-40</option>
+                            <option value="40-50">40-50</option>
+                            <option value="50-60">50-60</option>
+                            <option value=">60">>60</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Select Photo</strong></td>
+                    <td><input type="file" name="photo"></td>
+                </tr>
+                <tr>
+                    <td class="b_row" colspan="2">
+                        <input class="buttons" type="button" value="Click Me">
+                        <input class="buttons" type="reset" value="Reset">
+                        <input class="buttons" type="submit" value="Submit Form">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question 3</title>
+    <style>
+        table {
+            border-style: solid;
+            border-width: 6px;
+            border-top-color: grey;
+            border-left-color: grey;
+            border-right-color: black;
+            border-bottom-color: black;
+            background-color: #FFE4B5;
+        }
+
+        td.contact {
+            background-color: #CD5C5C;
+            text-align: center;
+            font-size: 200%;
+            color: white;
+            font-family: cursive;
+            width: 60%;
+        }
+
+        input {
+            width: 98%;
+            height: 30px;
+            padding: 5px;
+            border: none;
+        }
+
+        textarea {
+            width: 98%;
+            height: 100px;
+            padding: 5px;
+            border: none;
+        }
+
+        input.submit {
+            width: 98%;
+            height: 40px;
+            padding: 5px;
+            border-style: solid;
+            background-color: #FFD700;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <form action="mailto:ashishky.jp11@gmail.com" method="post">
+            <table cellspacing="7" cellpadding="5">
+                <tr>
+                    <td class="contact">Contact Us!</td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Name......" /></td>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="Email......" /></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Subject......" /></td>
+                </tr>
+                <tr>
+                    <td> <textarea name="Message" rows="10" cols="30" placeholder="Message......"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input class="submit" type="submit" name="Send Message" value="Send Message" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
